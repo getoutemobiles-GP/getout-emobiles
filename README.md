@@ -1,31 +1,13 @@
 # Get Out! eMobiles+ — EMV Guardians Landing Page
 
-This is the free GitHub Pages landing page for **Get Out! eMobiles+**, formerly **Valley E-Cycle+**.
+Free GitHub Pages landing page for Get Out! eMobiles+, formerly Valley E-Cycle+.
 
-## What is included
-
+## Files
 - `index.html` — the landing page
-- `styles.css` — all page styling
-- `assets/` — logo, legacy logo, EMV Guardians artwork, and promo art
+- `styles.css` — all styling
+- `getout-logo.png` — main logo
+- `emv-guardians-hero.png` — EMV Guardians hero art
+- `valley-legacy-logo.png` — legacy Valley E-Cycle+ logo
 
-## Quick GitHub Pages setup
-
-1. Create a free GitHub account if you do not have one.
-2. Create a new repository named: `getout-emobiles`
-3. Upload everything in this folder into the repository.
-4. Go to **Settings → Pages**.
-5. Under **Build and deployment**, choose:
-   - Source: `Deploy from a branch`
-   - Branch: `main`
-   - Folder: `/root`
-6. Save.
-7. GitHub will publish the site, usually at:
-   `https://YOUR-GITHUB-USERNAME.github.io/getout-emobiles/`
-
-## Updating later
-
-When the full website is ready, this page can become the homepage or a temporary splash page. You can also connect a custom domain later.
-
-## Notes
-
-The email button uses `mailto:getoutemobiles@gmail.com` and the phone button uses `tel:2502523318`.
+## GitHub Pages
+Upload all files to the repository root, then enable GitHub Pages from Settings → Pages → Deploy from branch → main → root.
