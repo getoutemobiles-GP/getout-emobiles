@@ -106,7 +106,17 @@
 
   <div class="announcement-overlay" id="announcement" role="dialog" aria-modal="true" aria-label="GetOut Headquarters Announcement">
     <div class="announcement-box">
-      <button class="close-popup" id="closePopup" type="button" aria-label="Close announcement">×</button>
+      <script>
+window.onload = function () {
+
+    document.getElementById("closePopup").addEventListener("click", function () {
+
+        document.getElementById("announcement").style.display = "none";
+
+    });
+
+};
+</script>
       <img src="images/hq-announcement.jpg" alt="GetOut Headquarters Announcement comic featuring Guardian Prime, Relay, and HoloGary" />
     </div>
   </div>
