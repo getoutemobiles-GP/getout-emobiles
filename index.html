@@ -4,123 +4,246 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GetOut! eMobiles+ | EMV Guardians</title>
-  <meta name="description" content="GetOut! eMobiles+ is bringing electric adventure service, repairs, conversions, custom builds, and mobile support to Downtown Duncan." />
-  <meta property="og:title" content="GetOut! eMobiles+" />
-  <meta property="og:description" content="The EMV Guardians are standing by. Downtown Duncan headquarters announcement coming soon." />
-  <meta property="og:image" content="images/og-logo.jpg" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-  <div class="page-glow"></div>
 
-  <header class="site-header">
-    <div class="brand-name">Get Out! eMobiles+</div>
-    <nav class="top-nav" aria-label="Main navigation">
-      <a href="#services">Services</a>
-      <a href="#story">Our Story</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="former">Formerly Valley E-Cycle+</div>
+  <style>
+    body {
+      margin: 0;
+      background: #020702;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+    }
+
+    header {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      color: #75ff00;
+      font-weight: bold;
+    }
+
+    .hero {
+      max-width: 950px;
+      margin: 40px auto;
+      padding: 40px 20px;
+      border: 1px solid rgba(117,255,0,.25);
+      border-radius: 24px;
+      box-shadow: 0 0 40px rgba(117,255,0,.18);
+      background: radial-gradient(circle at top, rgba(117,255,0,.12), transparent 55%);
+    }
+
+    .logo {
+      width: 260px;
+      max-width: 80%;
+      border-radius: 50%;
+      filter: drop-shadow(0 0 25px #75ff00);
+    }
+
+    h1 {
+      font-size: clamp(42px, 8vw, 86px);
+      margin: 25px 0 10px;
+      color: #75ff00;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    h2 {
+      font-size: clamp(28px, 5vw, 62px);
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    p {
+      max-width: 700px;
+      margin: 25px auto;
+      font-size: 20px;
+      line-height: 1.5;
+      color: #d7d7d7;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 14px 28px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #061000;
+      background: #75ff00;
+    }
+
+    .buttons a.secondary {
+      background: transparent;
+      color: #75ff00;
+      border: 2px solid #75ff00;
+    }
+
+    section {
+      max-width: 950px;
+      margin: 35px auto;
+      padding: 30px 20px;
+      border: 1px solid rgba(117,255,0,.2);
+      border-radius: 22px;
+      background: rgba(255,255,255,.03);
+    }
+
+    section h3 {
+      color: #75ff00;
+      font-size: 30px;
+      margin-top: 0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      padding: 20px;
+      border-radius: 16px;
+      background: rgba(0,0,0,.45);
+      border: 1px solid rgba(117,255,0,.2);
+    }
+
+    footer {
+      padding: 30px;
+      color: #888;
+    }
+
+    #announcement {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,.82);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 99999;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .announcement-box {
+      position: relative;
+      max-width: 680px;
+      width: 92%;
+      max-height: 90vh;
+      overflow: auto;
+      background: #050505;
+      border: 4px solid #75ff00;
+      border-radius: 18px;
+      box-shadow: 0 0 45px #75ff00;
+      padding: 10px;
+    }
+
+    .announcement-box img {
+      width: 100%;
+      display: block;
+      border-radius: 12px;
+    }
+
+    #closePopup {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 100000;
+      background: #75ff00;
+      color: #000;
+      border: none;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      font-size: 32px;
+      font-weight: bold;
+      line-height: 38px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div>Get Out! eMobiles+</div>
+    <div>Formerly Valley E-Cycle+</div>
   </header>
 
   <main>
-    <section class="hero" id="home">
-      <img class="main-logo" src="images/getout-logo.png" alt="GetOut! eMobiles+ logo" />
-      <p class="kicker">Welcome to the E-Universe</p>
-      <h1>The EMV Guardians are standing by</h1>
-      <p class="hero-copy">
-        The future of electric adventure on Vancouver Island is almost here. Expert e-bike and e-scooter repairs, maintenance, conversions, custom builds, mobile service, and adventure support for riders ready to Get Out.
-      </p>
-      <div class="hero-actions">
-        <a class="button primary" href="tel:2502523318">Call 250-252-3318</a>
-        <a class="button secondary" href="mailto:getoutemobiles@gmail.com">Email Us</a>
-      </div>
-      <button class="announcement-trigger" id="openAnnouncement" type="button">📡 View Headquarters Transmission</button>
-    </section>
+    <section class="hero">
+      <img class="logo" src="Garys Get Out logo on black.png" alt="GetOut! eMobiles+ Logo">
 
-    <section class="comic-strip" aria-label="EMV Guardians teaser">
-      <article class="panel prime">
-        <span class="panel-label">Guardian Prime</span>
-        <p>“Relay, guess what’s coming?”</p>
-      </article>
-      <article class="panel relay">
-        <span class="panel-label">Relay</span>
-        <p>“What’s coming, Guardian Prime?”</p>
-      </article>
-      <article class="panel gary">
-        <span class="panel-label">HoloGary</span>
-        <p>“I know what it is!”</p>
-      </article>
-    </section>
+      <h1>The EMV</h1>
+      <h2>Guardians Are Standing By</h2>
 
-    <section class="announcement-card">
-      <p class="kicker">Downtown Duncan</p>
-      <h2>New Headquarters Incoming</h2>
       <p>
-        This week, GetOut! eMobiles+ is moving into its new headquarters in Downtown Duncan. We can’t say anything more quite yet… but it’s going to be exciting.
+        The future of electric adventure on Vancouver Island is almost here.
+        GetOut! eMobiles+ provides expert e-bike and e-scooter service,
+        repairs, maintenance, conversions, custom builds, mobile service,
+        and adventure support for riders ready to Get Out.
       </p>
-    </section>
 
-    <section class="services" id="services">
-      <p class="kicker">Sales & Service Area</p>
-      <h2>Built for real riders</h2>
-      <div class="service-grid">
-        <article>
-          <h3>E-Bike Repairs</h3>
-          <p>Diagnostics, maintenance, drivetrains, brakes, electrical troubleshooting, and repairs for bikes bought online, used, or locally.</p>
-        </article>
-        <article>
-          <h3>E-Scooter Repairs</h3>
-          <p>Support for common scooter issues, tune-ups, parts, wiring checks, and practical repair advice.</p>
-        </article>
-        <article>
-          <h3>Conversions & Customizing</h3>
-          <p>Bicycle-to-e-bike conversions, upgrades, custom builds, accessories, and rider-focused adventure setups.</p>
-        </article>
-        <article>
-          <h3>Mobile Service</h3>
-          <p>Planned support for riders who need help beyond the shop, including pickup-style service and rescue options.</p>
-        </article>
+      <div class="buttons">
+        <a href="tel:2502523318">Call 250-252-3318</a>
+        <a class="secondary" href="mailto:getoutemobiles@gmail.com">Email Us</a>
       </div>
     </section>
 
-    <section class="story" id="story">
-      <p class="kicker">Our Story</p>
-      <h2>Adventure awaits… and it’s green.</h2>
+    <section>
+      <h3>Services</h3>
+      <div class="services">
+        <div class="card">E-Bike Repairs</div>
+        <div class="card">E-Scooter Repairs</div>
+        <div class="card">Tune-Ups & Maintenance</div>
+        <div class="card">Conversions & Custom Builds</div>
+        <div class="card">Mobile Service</div>
+        <div class="card">Adventure Support</div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Our Story</h3>
       <p>
-        GetOut! eMobiles+ grew from Valley E-Cycle+ with the same mission: help people ride farther, explore more, and keep their electric adventures rolling. The new name brings the whole vision together — service, mobility, trails, repairs, community, and the EMV Guardians universe.
+        Born from Valley E-Cycle+, GetOut! eMobiles+ is the next chapter:
+        a bigger, greener, more adventurous e-mobility brand built for riders,
+        explorers, commuters, and the EMV Guardians universe.
       </p>
     </section>
 
-    <section class="contact" id="contact">
-      <p class="kicker">Contact</p>
-      <h2>Ready to ride?</h2>
-      <p>Email <a href="mailto:getoutemobiles@gmail.com">getoutemobiles@gmail.com</a> or call <a href="tel:2502523318">250-252-3318</a>.</p>
-      <p class="small-note">More headquarters details coming soon.</p>
+    <section>
+      <h3>Contact</h3>
+      <p>
+        Email <a style="color:#75ff00;" href="mailto:getoutemobiles@gmail.com">getoutemobiles@gmail.com</a>
+        or call <a style="color:#75ff00;" href="tel:2502523318">250-252-3318</a>.
+      </p>
+      <p>More headquarters details coming soon.</p>
     </section>
   </main>
-<script>
-window.onload = function () {
 
-    document.getElementById("closePopup").addEventListener("click", function () {
-
-        document.getElementById("announcement").style.display = "none";
-
-    });
-
-};
-</script>
   <footer>
-    <p>© <span id="year"></span> GetOut! eMobiles+ · EMV Guardians Universe</p>
+    Adventure Awaits... and it’s GREEN.
   </footer>
 
-  <div class="announcement-overlay" id="announcement" role="dialog" aria-modal="true" aria-label="GetOut Headquarters Announcement">
+  <div id="announcement">
     <div class="announcement-box">
-      
-      <img src="images/hq-announcement.jpg" alt="GetOut Headquarters Announcement comic featuring Guardian Prime, Relay, and HoloGary" />
+      <button id="closePopup" aria-label="Close announcement">×</button>
+      <img src="a_bold_comic_book_style_poster_landing_page_illust.png" alt="GetOut Headquarters Announcement">
     </div>
   </div>
 
-  <script src="js/script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const closeButton = document.getElementById("closePopup");
+      const announcement = document.getElementById("announcement");
+
+      if (closeButton && announcement) {
+        closeButton.addEventListener("click", function () {
+          announcement.style.display = "none";
+        });
+      }
+    });
+  </script>
+
 </body>
 </html>
