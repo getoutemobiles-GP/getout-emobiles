@@ -3,102 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GetOut! eMobiles+ | EMV Guardians HQ</title>
-  <meta name="description" content="GetOut! eMobiles+ - electric bike and scooter repairs, service, conversions, custom builds, mobile service, and adventure support in Duncan, BC." />
+  <title>GetOut! eMobiles+ | EMV Guardians</title>
+  <meta name="description" content="GetOut! eMobiles+ is bringing electric adventure service, repairs, conversions, custom builds, and mobile support to Downtown Duncan." />
+  <meta property="og:title" content="GetOut! eMobiles+" />
+  <meta property="og:description" content="The EMV Guardians are standing by. Downtown Duncan headquarters announcement coming soon." />
+  <meta property="og:image" content="images/og-logo.jpg" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div class="boot" id="boot">
-    <img src="images/logo.png" alt="GetOut! eMobiles+" />
-    <div class="boot-text">Initializing EMV Network...</div>
-    <div class="boot-bar"><span></span></div>
-  </div>
-
   <div class="page-glow"></div>
-  <div class="scanlines"></div>
 
   <header class="site-header">
-    <a class="brand" href="#home"><img src="images/logo.png" alt="GetOut! eMobiles+ logo"><span>GetOut! eMobiles+</span></a>
-    <nav>
+    <div class="brand-name">Get Out! eMobiles+</div>
+    <nav class="top-nav" aria-label="Main navigation">
       <a href="#services">Services</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#guardians">Guardians</a>
-      <a href="#routes">Ride Routes</a>
+      <a href="#story">Our Story</a>
       <a href="#contact">Contact</a>
     </nav>
+    <div class="former">Formerly Valley E-Cycle+</div>
   </header>
 
-  <main id="home">
-    <section class="hero reveal">
-      <div class="hero-copy">
-        <p class="eyebrow">Formerly Valley E-Cycle+ • Now entering the EMV Universe</p>
-        <h1>Adventure Awaits...<br><span>and it’s GREEN.</span></h1>
-        <p class="lede">Expert e-bike and e-scooter repairs, conversions, custom builds, mobile service, and rider support from our new headquarters in Downtown Duncan.</p>
-        <div class="hero-actions">
-          <a class="btn" href="tel:2502523318">Call 250-252-3318</a>
-          <a class="btn ghost" href="mailto:getoutemobiles@gmail.com">Email Us</a>
-        </div>
+  <main>
+    <section class="hero" id="home">
+      <img class="main-logo" src="images/getout-logo.png" alt="GetOut! eMobiles+ logo" />
+      <p class="kicker">Welcome to the E-Universe</p>
+      <h1>The EMV Guardians are standing by</h1>
+      <p class="hero-copy">
+        The future of electric adventure on Vancouver Island is almost here. Expert e-bike and e-scooter repairs, maintenance, conversions, custom builds, mobile service, and adventure support for riders ready to Get Out.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="tel:2502523318">Call 250-252-3318</a>
+        <a class="button secondary" href="mailto:getoutemobiles@gmail.com">Email Us</a>
       </div>
-      <div class="hero-orb">
-        <img src="images/logo.png" alt="GetOut! eMobiles+ logo">
+      <button class="announcement-trigger" id="openAnnouncement" type="button">📡 View Headquarters Transmission</button>
+    </section>
+
+    <section class="comic-strip" aria-label="EMV Guardians teaser">
+      <article class="panel prime">
+        <span class="panel-label">Guardian Prime</span>
+        <p>“Relay, guess what’s coming?”</p>
+      </article>
+      <article class="panel relay">
+        <span class="panel-label">Relay</span>
+        <p>“What’s coming, Guardian Prime?”</p>
+      </article>
+      <article class="panel gary">
+        <span class="panel-label">HoloGary</span>
+        <p>“I know what it is!”</p>
+      </article>
+    </section>
+
+    <section class="announcement-card">
+      <p class="kicker">Downtown Duncan</p>
+      <h2>New Headquarters Incoming</h2>
+      <p>
+        This week, GetOut! eMobiles+ is moving into its new headquarters in Downtown Duncan. We can’t say anything more quite yet… but it’s going to be exciting.
+      </p>
+    </section>
+
+    <section class="services" id="services">
+      <p class="kicker">Sales & Service Area</p>
+      <h2>Built for real riders</h2>
+      <div class="service-grid">
+        <article>
+          <h3>E-Bike Repairs</h3>
+          <p>Diagnostics, maintenance, drivetrains, brakes, electrical troubleshooting, and repairs for bikes bought online, used, or locally.</p>
+        </article>
+        <article>
+          <h3>E-Scooter Repairs</h3>
+          <p>Support for common scooter issues, tune-ups, parts, wiring checks, and practical repair advice.</p>
+        </article>
+        <article>
+          <h3>Conversions & Customizing</h3>
+          <p>Bicycle-to-e-bike conversions, upgrades, custom builds, accessories, and rider-focused adventure setups.</p>
+        </article>
+        <article>
+          <h3>Mobile Service</h3>
+          <p>Planned support for riders who need help beyond the shop, including pickup-style service and rescue options.</p>
+        </article>
       </div>
     </section>
 
-    <section class="transmission reveal">
-      <div class="panel-label">Incoming Transmission</div>
-      <h2>New Headquarters Activation</h2>
-      <p>This week, GetOut! eMobiles+ is moving into our new headquarters in Downtown Duncan. Details are still under wraps, but the EMV Guardians are standing by.</p>
-      <button class="btn" id="openAnnouncement">View Comic Announcement</button>
+    <section class="story" id="story">
+      <p class="kicker">Our Story</p>
+      <h2>Adventure awaits… and it’s green.</h2>
+      <p>
+        GetOut! eMobiles+ grew from Valley E-Cycle+ with the same mission: help people ride farther, explore more, and keep their electric adventures rolling. The new name brings the whole vision together — service, mobility, trails, repairs, community, and the EMV Guardians universe.
+      </p>
     </section>
 
-    <section id="services" class="reveal">
-      <div class="section-head"><p>What we do</p><h2>Service Bay</h2></div>
-      <div class="grid cards">
-        <article><span>01</span><h3>E-Bike Repairs</h3><p>Diagnostics, troubleshooting, mechanical service, electrical support, and real-world rider help.</p></article>
-        <article><span>02</span><h3>E-Scooter Repairs</h3><p>Practical service for commuters, students, explorers, and everyday riders.</p></article>
-        <article><span>03</span><h3>Tune-Ups</h3><p>Brake adjustments, drivetrain tuning, safety checks, tires, controls, and maintenance.</p></article>
-        <article><span>04</span><h3>Conversions</h3><p>Turn the bike you already love into an electric adventure machine.</p></article>
-        <article><span>05</span><h3>Custom Builds</h3><p>Parts, upgrades, accessories, and ideas built around the rider.</p></article>
-        <article><span>06</span><h3>Mobile Service</h3><p>Adventure support and future mobile rescue options across the Cowichan Valley.</p></article>
-      </div>
-    </section>
-
-    <section id="pricing" class="pricing reveal">
-      <div class="section-head"><p>Simple and honest</p><h2>Launch Pricing</h2></div>
-      <div class="price-row">
-        <div class="price-card"><strong>$60</strong><span>Non-refundable diagnostic fee</span></div>
-        <div class="price-card"><strong>$120/hr</strong><span>Repair and service labour</span></div>
-        <div class="price-card"><strong>10+</strong><span>Weekly service target as HQ ramps up</span></div>
-      </div>
-    </section>
-
-    <section id="guardians" class="reveal">
-      <div class="section-head"><p>Meet the crew</p><h2>The EMV Guardians</h2></div>
-      <div class="grid guardian-grid">
-        <article><div class="avatar prime">GP</div><h3>Guardian Prime</h3><p>Founder, builder, repair lead, and keeper of the green adventure spark.</p></article>
-        <article><div class="avatar relay">R</div><h3>Relay</h3><p>Operations, communications, rider care, and the heartbeat of HQ.</p></article>
-        <article><div class="avatar holo">HG</div><h3>HoloGary</h3><p>Digital sidekick, idea engine, mission control, and occasional troublemaker.</p></article>
-      </div>
-    </section>
-
-    <section id="routes" class="routes reveal">
-      <div class="section-head"><p>Coming soon</p><h2>Ride Routes</h2></div>
-      <p>Recommended e-bike and e-scooter routes, off-road adventures, scenic stops, coffee breaks, and local map links are coming next.</p>
-    </section>
-
-    <section id="contact" class="contact reveal">
-      <div class="section-head"><p>Ready when you are</p><h2>Contact HQ</h2></div>
+    <section class="contact" id="contact">
+      <p class="kicker">Contact</p>
+      <h2>Ready to ride?</h2>
       <p>Email <a href="mailto:getoutemobiles@gmail.com">getoutemobiles@gmail.com</a> or call <a href="tel:2502523318">250-252-3318</a>.</p>
-      <p class="small">More headquarters details coming soon. Can’t say anything more quite yet... but it’s gonna be exciting.</p>
+      <p class="small-note">More headquarters details coming soon.</p>
     </section>
   </main>
 
-  <footer>GetOut! eMobiles+ • Downtown Duncan • Adventure Awaits... and it’s GREEN.</footer>
+  <footer>
+    <p>© <span id="year"></span> GetOut! eMobiles+ · EMV Guardians Universe</p>
+  </footer>
 
-  <div id="announcement" class="announcement" aria-hidden="true">
-    <div class="announcement-card">
-      <button id="closeAnnouncement" aria-label="Close announcement">×</button>
-      <img src="images/hq-announcement.jpg" alt="GetOut Headquarters comic announcement">
+  <div class="announcement-overlay" id="announcement" role="dialog" aria-modal="true" aria-label="GetOut Headquarters Announcement">
+    <div class="announcement-box">
+      <button class="close-popup" id="closePopup" type="button" aria-label="Close announcement">×</button>
+      <img src="images/hq-announcement.jpg" alt="GetOut Headquarters Announcement comic featuring Guardian Prime, Relay, and HoloGary" />
     </div>
   </div>
 
